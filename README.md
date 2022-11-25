@@ -54,5 +54,5 @@ docker run -it -v /path/to/pts_test_data:/var/lib/phoronix-test-suite phoronix-t
 
 
 ## TODO
-- [X] Upload image to DockerHub
+- [X] ~~Upload image to DockerHub~~
 - [ ] Automatic builds and pushes to DockerHub (using GitHub actions) - when new version is released
