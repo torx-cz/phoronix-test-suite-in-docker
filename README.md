@@ -41,19 +41,19 @@ For running `bash` inside of container use:
 ```bash
 docker run -it phoronix-test-suite:latest bash
 ```
-Phoronix Test Suite is located in `/phoronix-test-suite` inside container.
+Phoronix Test Suite is located in `/phoronix-test-suite` inside container. Or where you specify in environment variable `PTS_TEST_INSTALL_ROOT_PATH`.
 
 
 ## Note
-Test are installed under `/var/lib/phoronix-test-suite` inside of container.
-
-So if you want to test different disk / mount point use `volume`:
+So if you want to test different disk / mount point use `volume` and environment variable `PTS_TEST_INSTALL_ROOT_PATH`:
 ```bash
-docker run -it -v /path/to/pts_test_data:/var/lib/phoronix-test-suite phoronix-test-suite:latest
+docker run -it -e PTS_TEST_INSTALL_ROOT_PATH=/pts_data -v /path/to/pts_data:/pts_data phoronix-test-suite:latest
 ```
+
+Test are installed under `/pts_data` inside of container.
 
 
 ## TODO
 - [X] ~~Upload image to DockerHub~~
-- [ ] Document using of environment variable `PTS_TEST_INSTALL_ROOT_PATH`
+- [X] Document using of environment variable `PTS_TEST_INSTALL_ROOT_PATH`
 - [ ] Automatic builds and pushes to DockerHub (using GitHub actions) - when new version is released
