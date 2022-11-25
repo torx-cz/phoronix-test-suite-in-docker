@@ -47,10 +47,12 @@ Phoronix Test Suite is located in `/phoronix-test-suite` inside container. Or wh
 ## Note
 So if you want to test different disk / mount point use `volume` and environment variable `PTS_TEST_INSTALL_ROOT_PATH`:
 ```bash
-docker run -it -e PTS_TEST_INSTALL_ROOT_PATH=/pts_data -v /path/to/pts_data:/pts_data phoronix-test-suite:latest
+docker run -it -e PTS_TEST_INSTALL_ROOT_PATH=/pts_data/ -v /path/to/pts_data:/pts_data phoronix-test-suite:latest
 ```
 
-Test are installed under `/pts_data` inside of container.
+Test are installed under `/pts_data/` inside of container.
+
+*Note: `PTS_TEST_INSTALL_ROOT_PATH` need to be valid absolute Path - and ENDED WITH SLASH!*
 
 
 ## TODO
