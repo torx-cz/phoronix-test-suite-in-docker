@@ -6,6 +6,10 @@ This is Dockerized version of [Phoronix Test Suite](https://www.phoronix-test-su
 Inspired by [Quickly & Easily Running Benchmarks On Docker With "phoronix/pts"](https://www.phoronix.com/review/docker-phoronix-pts), docker hub reference [phoronix/pts](https://hub.docker.com/r/phoronix/pts).
 This is currently not working - due to missing dependencies, for more info see: [https://gist.github.com/torx-cz/2f60aac73c4033039a446bdc3be37707](https://gist.github.com/torx-cz/2f60aac73c4033039a446bdc3be37707)
 
+## Official Docker image
+Official Docker image at Docker Hub: [https://hub.docker.com/r/torxcz/phoronix-test-suite](https://hub.docker.com/r/torxcz/phoronix-test-suite)
+
+
 ## Prerequisites
 For building and running there has to be installed:
 ```
@@ -50,5 +54,5 @@ docker run -it -v /path/to/pts_test_data:/var/lib/phoronix-test-suite phoronix-t
 
 
 ## TODO
-- [ ] Upload image to DockerHub
+- [X] Upload image to DockerHub
 - [ ] Automatic builds and pushes to DockerHub (using GitHub actions) - when new version is released
