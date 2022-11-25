@@ -47,3 +47,8 @@ So if you want to test different disk / mount point use `volume`:
 ```bash
 docker run -it -v /path/to/pts_test_data:/var/lib/phoronix-test-suite phoronix-test-suite:latest
 ```
+
+
+## TODO
+- [ ] Upload image to DockerHub
+- [ ] Automatic builds and pushes to DockerHub (using GitHub actions) - when new version is released
