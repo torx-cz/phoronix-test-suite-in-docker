@@ -24,7 +24,7 @@ Follow steps bellow:
 git clone https://github.com/torx-cz/phoronix-test-suite-in-docker.git
 cd phoronix-test-suite-in-docker
 
-docker build -t phoronix-test-suite:latest
+docker build -t phoronix-test-suite:latest .
 ```
 
 If you want to build different version of `phoronix test suite` see `Dockerfile`.
