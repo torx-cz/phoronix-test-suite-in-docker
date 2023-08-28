@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:jammy-20230804
 
 # phoronix test suite version
 # see: https://github.com/phoronix-test-suite/phoronix-test-suite/releases
